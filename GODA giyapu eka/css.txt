@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:'Roboto',sans-serif;
+}  
+  
+
+       
+.logo{
+    position:absolute;
+    margin:top:15px;
+    right:0%;
+    width: 15vh;
+    
+}
+.navbar ul li{
+    font-size:20px;
+    height: 0vh;
+   
+    padding: 5px;
+    list-style: none;
+    display: inline-flex;
+    margin: 10px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ECECF6;
+    text-transform:uppercase;
+    }
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width:0%;
+    background:orange;
+    position: absolute;
+    left: 6;
+    bottom: -40px;
+    transition: 0.5s;
+    }
+.navbar ul li:hover::after{
+    width: 80%;
+    }
+
+
+p{  
+   
+    text-overflow: clip;
+    
+    color:burlywood;
+    font-size:30px;
+    text-align: left;
+    font-style: oblique;
+}
+
+
+
+h1{ padding: 40px;
+    font-size: 65px;
+    text-align: center;
+    color: orange;
+}
+
+
+footer{
+    background-color:transparent;
+    border-radius:0px;   
+    text-align:right;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 98%;    
+}
+        
+a:-webkit-any-link {
+    color:snow;
+    cursor: pointer;
+}
+.section_top{
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(2nnpage.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation:change 10s infinite ease-in-out;
+    
+    
+}
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    
+}
+.content a{
+    background:black;
+    padding: 10px;
+    24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    
+    
+}
+.content a:hover{
+    background:black;
+    color: orange;
+    
+    
+}
+@keyframes{
+    0%
+    {
+        background-image: url(1.jpg)
+    }
+    20%
+    {
+        background-image: url(2.jpg)
+    } 
+    40%
+    {
+        background-image: url(3.jpg)
+    }
+    60%
+    {
+        background-image: url(4.jpg)
+    }
+
+
+
+
+}

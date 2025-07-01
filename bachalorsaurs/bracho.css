@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+
+
+.navbar ul li{
+    font-size:30px;
+    height:0vh;
+   
+    padding: 10px;
+    left: 420px;
+    list-style: none;
+    display: inline-flex;
+    margin: 5px;
+    position: relative;
+     
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: burlywood;
+    text-transform:uppercase;
+   
+    }
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width:0%;
+    background:orange;
+    position: absolute;
+    left: 10;
+    bottom: -40px;
+    transition: 0.5s;
+    }
+.navbar ul li:hover::after{
+    width: 60%;
+    }
+
+.logo{
+    position:absolute;
+    margin:top:15px;
+    right:0%;
+    width: 15vh;
+    
+}
+.banner{
+    width: 100%px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(games-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center; }
+    
+    .image-card {
+    background-color:red;
+    padding: 10px;
+    text-align: center;
+}
+.row{
+    display:flex;
+    height: 78%;
+    align-items:center;
+}
+.col{
+    flex-basis:40%;
+      
+}
+
+h1{
+    color:crimson;
+    font-size:42px;
+     outline-style: ridge;
+    outline-color: crimson;
+}
+P{
+    color:lightgoldenrodyellow;
+    font-size: 18px;
+    line-height:23px;
+    
+    outline-color: greenyellow;
+}
+
+.card{
+    transition:transform 0.50;
+}
+
+.card1{
+    
+    display:inline-block;
+    border-radius: 10px;
+    padding:  130px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:15px 15px;
+    background-image: url(brachiosaurus-skull-fossil-millard-h-sharp.jpg);
+    background-position: center;
+    background-size: cover;
+      transition:transform 0.50s;
+}
+.card2{
+  
+    display:inline-block;
+    border-radius: 10px;
+    padding:  200px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:15px 15px;
+    background-image:url(desktop-wallpaper-brachiosaurus-brachiosaurus-brachiosaurus-jurassic-park-and-blue-brachiosaurus.jpg);
+    background-position:right;
+    background-size: cover;
+    transition:transform 0.50s;
+    background-image: 
+   
+}
+.card3{
+    
+    display:inline-block;
+    border-radius: 10px;
+    padding:  130px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:15px 15px;
+    background-image: url(brachiosaurus_skull_at_the_dmonas_by_kylgrv_dcfzmgq-fullview.jpg);
+    background-position: center;
+    background-size: cover;
+      transition:transform 0.50s;
+}
+
+.card:hover{
+    transform:translateY(-40px);
+}

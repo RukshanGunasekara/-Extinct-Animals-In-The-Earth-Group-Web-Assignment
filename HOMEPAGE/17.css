@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.section_top {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(2nnpage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: change 20s infinite ease-in-out;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 10vw;
+    max-width: 100px;
+    height: auto;
+    z-index: 10;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    position: relative;
+}
+
+.navbar ul li a {
+    font-size: 1.5rem;
+    color: burlywood;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: aqua;
+}
+
+.navbar ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width 0.5s ease;
+}
+
+.navbar ul li:hover::after {
+    width: 80%;
+}
+
+h1 {
+    font-size: 4rem;
+    color: ghostwhite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore-btn {
+    background: #000;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.explore-btn:hover {
+    background: #333;
+    color: aqua;
+    transform: scale(1.05);
+}
+
+@keyframes change {
+    0% { background-image: url(2nnpage.jpg); }
+    20% { background-image: url(anaconda-snake-rainforest-274290661.jpg); }
+    40% { background-image: url(prehistory.jpg); }
+    60% { background-image: url(f.JPG); }
+    80% { background-image: url(749364.jpg); }
+    100% { background-image: url(2nnpage.jpg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .logo {
+        width: 15vw;
+        max-width: 80px;
+    }
+
+    .explore-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        top: 10px;
+        right: 10px;
+        width: 20vw;
+        max-width: 60px;
+    }
+}

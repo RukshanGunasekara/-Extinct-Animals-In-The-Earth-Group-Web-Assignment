@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>EXTINCT ANIMALS</title>
+    
+<link rel="stylesheet" href="17.css">
+    
+</head>
+
+<body>
+   <div>
+    <div class="navbar">
+        <div class="Section_top">
+           
+           <div class=" content">
+             <h1> EXTINCT ANIMALS IN THE WORLD</h1>
+               <a href="#">EXPLORE</a>
+             
+             
+             </div> 
+        
+       <img src="_20231116_221332.JPG" class="logo">
+       <nav>
+        <ul>
+           
+        <li><a href="">HOME</a></li> 
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">CONTACT</a></li>    
+           
+     </ul>
+          
+         
+           
+          
+           
+           
+              
+             
+             
+       
+          
+           
+          </nav>
+
+       
+</div>
+       </div>
+      
+<div>  <footer><li><a href="#">HOME</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="#">ABOUT US</a></li></footer>
+             </div>
+
+    
+   
+ 
+    
+    </div>
+    
+</body>
+
+
+
+
+
+
+
+</html>

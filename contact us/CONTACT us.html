@@ -1,0 +1,137 @@
+<html>
+<head>
+    <title>CONTACT US</title>
+    <style>
+        body {
+            background-color: #0a0e2b;
+            color: #ffffff;
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            background-color: #14183e;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #00c4b4;
+        }
+
+        .contact-form {
+            max-width: 450px;
+            margin: 60px auto;
+            padding: 25px;
+            border: 2px solid #2a2e5a;
+            border-radius: 12px;
+            background-color: #14183e;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .contact-form h2 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            background-color: #2a2e5a;
+            border: 1px solid #3e4278;
+            color: #ffffff;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #00c4b4;
+            background-color: #333766;
+        }
+
+        .contact-form button {
+            background-color: transparent;
+            color: #ffffff;
+            padding: 12px;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #00c4b4;
+            border-color: #00c4b4;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
